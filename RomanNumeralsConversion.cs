@@ -21,19 +21,31 @@ namespace RomanNumeralsConversion
         {
             Assert.AreEqual("III", ToRoman(3));
         }
+        [TestMethod]
+        public void TestConversionToRoman4()
+        {
+            Assert.AreEqual("IV", ToRoman(4));
+        }
+        [TestMethod]
+        public void TestConversionToRoman5()
+        {
+            Assert.AreEqual("V", ToRoman(5));
+        }
         public string ToRoman(int number)
         {
             string[] numerals = new string[]
                 { "C", "XC", "L", "XL", "X", "IX", "V", "IV", "I" };
-            int[] values = new int[] {100, 90, 50, 40, 10, 9, 5, 4, 1 };
             if (number < 0 || number > 100)
                 throw new ArgumentException("Value must be in the range 0 - 100");
             if (number == 0) return "N";
             string result = "";
-            if (number == 1) result = numerals[numerals.Length-1];
+            if (number == 1) result = numerals[numerals.Length - 1];
             if (number == 2) result = numerals[numerals.Length - 1]+ numerals[numerals.Length - 1];
             if (number == 3) result = numerals[numerals.Length - 1]+ numerals[numerals.Length - 1]+ numerals[numerals.Length - 1];
+            if (number == 4) result = numerals[numerals.Length - 2];
+            if (number == 5) result = numerals[numerals.Length - 3];
             return result;
+            
         }
         
     }
