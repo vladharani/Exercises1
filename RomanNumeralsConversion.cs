@@ -31,6 +31,11 @@ namespace RomanNumeralsConversion
         {
             Assert.AreEqual("V", ToRoman(5));
         }
+        [TestMethod]
+        public void TestConversionToRoman6()
+        {
+            Assert.AreEqual("VI", ToRoman(6));
+        }
         public string ToRoman(int number)
         {
             string[] numerals = new string[]
@@ -44,6 +49,7 @@ namespace RomanNumeralsConversion
             if (number == 3) result = numerals[numerals.Length - 1]+ numerals[numerals.Length - 1]+ numerals[numerals.Length - 1];
             if (number == 4) result = numerals[numerals.Length - 2];
             if (number == 5) result = numerals[numerals.Length - 3];
+            if (number == 6) result = numerals[numerals.Length - 3] + numerals[numerals.Length - 1]; 
             return result;
             
         }
