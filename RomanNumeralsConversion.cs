@@ -7,39 +7,69 @@ namespace RomanNumeralsConversion
     public class RomanNumeralsConversion
     {
         [TestMethod]
-        public void TestConversionToRoman1()
+        public void TestConversionToRoman01()
         {
             Assert.AreEqual("I", ToRoman(1));
         }
         [TestMethod]
-        public void TestConversionToRoman2()
+        public void TestConversionToRoman02()
         {
             Assert.AreEqual("II", ToRoman(2));
         }
         [TestMethod]
-        public void TestConversionToRoman3()
+        public void TestConversionToRoman03()
         {
             Assert.AreEqual("III", ToRoman(3));
         }
         [TestMethod]
-        public void TestConversionToRoman4()
+        public void TestConversionToRoman04()
         {
             Assert.AreEqual("IV", ToRoman(4));
         }
         [TestMethod]
-        public void TestConversionToRoman5()
+        public void TestConversionToRoman05()
         {
             Assert.AreEqual("V", ToRoman(5));
         }
         [TestMethod]
-        public void TestConversionToRoman6()
+        public void TestConversionToRoman06()
         {
             Assert.AreEqual("VI", ToRoman(6));
         }
         [TestMethod]
-        public void TestConversionToRoman7()
+        public void TestConversionToRoman07()
         {
             Assert.AreEqual("VII", ToRoman(7));
+        }
+        [TestMethod]
+        public void TestConversionToRoman08()
+        {
+            Assert.AreEqual("VIII", ToRoman(8));
+        }
+        [TestMethod]
+        public void TestConversionToRoman09()
+        {
+            Assert.AreEqual("IX", ToRoman(9));
+        }
+        [TestMethod]
+        public void TestConversionToRoman10()
+        {
+            Assert.AreEqual("X", ToRoman(10));
+        }
+        [TestMethod]
+        public void TestConversionToRoman11()
+        {
+            Assert.AreEqual("XI", ToRoman(11));
+        }
+        [TestMethod]
+        public void TestConversionToRoman12()
+        {
+            Assert.AreEqual("XII", ToRoman(12));
+        }
+        [TestMethod]
+        public void TestConversionToRoman13()
+        {
+            Assert.AreEqual("XIII", ToRoman(13));
         }
         public string ToRoman(int number)
         {
@@ -56,6 +86,14 @@ namespace RomanNumeralsConversion
             if (number == 5) result = numerals[numerals.Length - 3];
             if (number == 6) result = numerals[numerals.Length - 3] + numerals[numerals.Length - 1];
             if (number == 7) result = numerals[numerals.Length - 3] + numerals[numerals.Length - 1] + numerals[numerals.Length - 1];
+            if (number == 8) result = numerals[numerals.Length - 3] + numerals[numerals.Length - 1] + numerals[numerals.Length - 1] + numerals[numerals.Length - 1];
+            if (number == 9) result = numerals[numerals.Length - 4];
+            if (number == 10) result = numerals[numerals.Length - 5];
+            if (number == 11) result = numerals[numerals.Length - 5] + numerals[numerals.Length - 1];
+            if (number == 12) result = numerals[numerals.Length - 5] + numerals[numerals.Length - 1] + numerals[numerals.Length - 1];
+            if (number == 13) result = numerals[numerals.Length - 5] + numerals[numerals.Length - 1] + numerals[numerals.Length - 1] + numerals[numerals.Length - 1];
+            
+
             return result;
             
         }
