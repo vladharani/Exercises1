@@ -3,11 +3,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{3CE18D72-CCD9-48DB-85FC-BF0EF4534CBE}</ProjectGuid>
+    <ProjectGuid>{85961323-1E9A-4AAB-87F4-A4E44435D0A9}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ConvertToRomanNumerals</RootNamespace>
-    <AssemblyName>ConvertToRomanNumerals</AssemblyName>
+    <RootNamespace>ArchBuildingAreaProblem</RootNamespace>
+    <AssemblyName>ArchBuildingAreaProblem</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -50,7 +50,7 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
-    <Compile Include="ConvertToRoman.cs" />
+    <Compile Include="CoordinateAreaCalculation.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Choose>
